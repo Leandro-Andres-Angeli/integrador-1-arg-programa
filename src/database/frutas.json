@@ -1,0 +1,230 @@
+[
+
+{
+
+
+"id": 1,
+
+
+"imagen": "🍎",
+
+
+"nombre": "Manzana",
+
+
+"importe": 1.99,
+
+
+"stock": 10
+
+},
+
+{
+
+
+"id": 2,
+
+
+"imagen": "🍌",
+
+
+"nombre": "Plátano",
+
+
+"importe": 0.99,
+
+
+"stock": 5
+
+},
+
+{
+
+
+"id": 3,
+
+
+"imagen": "🍇",
+
+
+"nombre": "Uva",
+
+
+"importe": 2.49,
+
+
+"stock": 8
+
+},
+
+{
+
+
+"id": 4,
+
+
+"imagen": "🍊",
+
+
+"nombre": "Naranja",
+
+
+"importe": 1.49,
+
+
+"stock": 15
+
+},
+
+{
+
+
+"id": 5,
+
+
+"imagen": "🍓",
+
+
+"nombre": "Fresa",
+
+
+"importe": 3.99,
+
+
+"stock": 12
+
+},
+
+{
+
+
+"id": 6,
+
+
+"imagen": "🍍",
+
+
+"nombre": "Piña",
+
+
+"importe": 2.79,
+
+
+"stock": 6
+
+},
+
+{
+
+
+"id": 7,
+
+
+"imagen": "🥭",
+
+
+"nombre": "Mango",
+
+
+"importe": 4.49,
+
+
+"stock": 9
+
+},
+
+{
+
+
+"id": 8,
+
+
+"imagen": "🍑",
+
+
+"nombre": "Durazno",
+
+
+"importe": 2.29,
+
+
+"stock": 7
+
+},
+
+{
+
+
+"id": 9,
+
+
+"imagen": "🍉",
+
+
+"nombre": "Sandía",
+
+
+"importe": 1.99,
+
+
+"stock": 4
+
+},
+
+{
+
+
+"id": 10,
+
+
+"imagen": "🍈",
+
+
+"nombre": "Melón",
+
+
+"importe": 2.99,
+
+
+"stock": 3
+
+},
+
+{
+
+
+"id": 11,
+
+
+"nombre": "fruta",
+
+
+"importe": "677",
+
+
+"stock": "23",
+
+
+"imagen": "🍐"
+
+},
+
+{
+
+
+"id": 12,
+
+
+"nombre": "fruta_otra",
+
+
+"importe": "990",
+
+
+"stock": "110",
+
+
+"imagen": "🍐"
+
+}
+]
