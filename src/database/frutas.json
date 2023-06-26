@@ -161,7 +161,7 @@
 "imagen": "🍉",
 
 
-"nombre": "Sandía",
+"nombre": "Sandia",
 
 
 "importe": 1.99,
@@ -177,16 +177,16 @@
 "id": 10,
 
 
-"imagen": "🍈",
+"nombre": "Melon",
 
 
-"nombre": "Melón",
+"importe": 666,
 
 
-"importe": 2.99,
+"stock": 9,
 
 
-"stock": 3
+"imagen": "🍐"
 
 },
 
@@ -196,13 +196,13 @@
 "id": 11,
 
 
-"nombre": "fruta",
+"nombre": "Tomate",
 
 
-"importe": "677",
+"importe": 78,
 
 
-"stock": "23",
+"stock": 14,
 
 
 "imagen": "🍐"
@@ -215,13 +215,13 @@
 "id": 12,
 
 
-"nombre": "fruta_otra",
+"nombre": "Mora",
 
 
-"importe": "990",
+"importe": 78,
 
 
-"stock": "110",
+"stock": 114,
 
 
 "imagen": "🍐"
