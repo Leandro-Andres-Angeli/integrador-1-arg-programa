@@ -57,8 +57,10 @@ const updateOne = async (fruitUpdate,id) => {
   if( fruits.find((fruit) => fruit.id === id) === undefined ){
     throw new Error("Id no existente") 
   }
-  const fruitPos = fruits.findIndex((fruit)=> fruit.index === id)
+  const fruitPos = fruits.findIndex((fruit)=> fruit.id === id)
+
   fruits[fruitPos] ={id, ...fruitUpdate}
+  console.log(fruits)
   await write(fruits);
   return fruits[fruitPos];
 };
@@ -76,23 +78,7 @@ const findOne = async (id) => {
  }
   return fruit;
 };
-const findByName = async (name) => {
-  if(!name ){
-    throw new Error("Ingrese nombre")
-  }
-  console.log(name)
-  const fruits = await read();
-  
-  const fruit = fruits.filter((fruit) =>
 
-  fruit.nombre.toLowerCase().includes(name.toLowerCase())
-
-    );
- if(fruit.length === 0){
-  throw new Error("No se encontraron  frutas")
- }
-  return fruit;
-};
 const deleteOne = async (id) => {
   if(!id){
     throw new Error("No se encontro Id")
@@ -109,4 +95,4 @@ const deleteOne = async (id) => {
  
 
 };
-module.exports = { findAll,findByName, addOne, findOne,updateOne,deleteOne };
+module.exports = { findAll, addOne, findOne,updateOne,deleteOne };
