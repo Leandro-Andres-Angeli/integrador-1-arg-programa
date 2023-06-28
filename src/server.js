@@ -1,6 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const { findAll, addOne, findOne, updateOne, deleteOne, findByName } = require("./database/frutas.manager");
+const { findAll, addOne, findOne, updateOne, deleteOne } = require("./database/frutas.manager");
 require("dotenv").config();
 const server = express();
 server.use(express.json());
@@ -11,7 +11,7 @@ server.get("/frutas/", (req, res) => {
     .then((data) => res.status(200).send(data))
     .catch((err) => res.status(400).send(err.message));
 });
-server.get("/frutas/id/:id", (req, res) => {
+server.get("/frutas/:id", (req, res) => {
   const { id } = req.params;
 
   findOne(id)
@@ -20,15 +20,7 @@ server.get("/frutas/id/:id", (req, res) => {
         res.status(200).send(data)})
     .catch((err) => res.status(400).send(err.message));
 });
-server.get("/frutas/name/:name", (req, res) => {
-  const { name } = req.params;
 
-  findByName(name)
-    .then((data) =>{
-      console.log(data)
-        res.status(200).send(data)})
-    .catch((err) => res.status(400).send(err.message));
-});
 server.post("/frutas/", (req, res) => {
   const { nombre, importe, stock} = req.body;
   const newFruit = { nombre, importe, stock,imagen: "🍐" };
